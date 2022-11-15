@@ -1,0 +1,134 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', arial;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12.5%;
+}
+
+.logo {
+    color: #E5E7EB;
+    max-height: 45px;
+    max-width: 500px;
+    overflow: hidden;
+    font-size: 18px;
+    font-style: bold;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.nav-links {
+    li {
+        display: inline-block;
+        padding: 25px 25px;
+
+        a {
+            transition: all 0.3s ease 0s;
+            font-size: 18px;
+            color: #E5E7EB;
+            text-decoration: none;
+
+            &:hover {
+                color: #307baa;
+            }
+        }
+    }
+}
+
+.awesome {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    padding: 50px 12.5%;
+
+    .awesome-text {
+        max-width: 40%;
+        padding-right: 10%;
+        margin: 0;
+        
+        h1 {
+            line-height: 50px;
+            color: #F9FAF8;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        p {
+            margin: 20px 0 0 0;
+            font-size: 18px;
+            color: #E5E7EB;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+
+            margin-top: 20px;
+            background-color: #3882F6;
+            color: white;
+
+            border-radius: 5px;
+            border-style: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #193c74;
+            }
+        }
+    }
+
+    .awesome-image {
+        background-color: grey;
+        width: 50%;
+
+        line-height: 1250%;
+        text-align: center;
+    }
+}
+
+.random {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 25%;
+
+    .box1 {
+        font-size: 24px;
+        color: #1F2937;
+    }
+    
+    .random-boxes {
+        display: flex;
+        gap: 50px;
+        padding-top: 2%;
+        overflow: hidden;
+
+        .box2 img, .box3 img, .box4 img, .box5 img{
+            border-style: solid;
+            border-color: #3882F6;
+            min-height: 250px;
+            min-width: 250px;
+
+            max-height: 250px;
+            max-width: 250px;
+
+            border-radius: 25px;
+
+        }
+
+    }
+}
+
