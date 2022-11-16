@@ -52,6 +52,7 @@ ul {
     color: white;
     display: flex;
     padding: 50px 12.5%;
+    align-items: flex-start;
 
     .awesome-text {
         max-width: 40%;
@@ -90,11 +91,12 @@ ul {
     }
 
     .awesome-image {
-        background-color: grey;
         width: 50%;
 
-        line-height: 1250%;
         text-align: center;
+        max-width: 50%;
+        max-height: 350px;
+        overflow: hidden;
     }
 }
 
@@ -132,3 +134,80 @@ ul {
     }
 }
 
+.quote {
+    background-color: #E5E7EB;
+    padding: 5% 0 5% 0;
+
+    #cat-quote {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 36px;
+        font-style: italic;
+        color: #1F2937;
+
+    }
+    #quote-writer {
+        margin-left: 50%;
+        margin-right: 25%;
+
+        font-size: 20px;
+    }
+}
+
+.call-to-action {
+    margin: 5% 12.5%;
+    display: flex;
+    flex-direction: row;
+    background-color: #1F2937;
+    border-radius: 10px;
+    justify-content: space-between;
+
+    .sign-up-text {
+        color: white;
+        padding: 5% 10% 5%;
+        margin: 0 15% 0 0;    
+
+        #big-text {
+            font-weight: 700;
+            font-size: 25px;  
+            margin: 0;
+        }
+
+        #small-text {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .sign-up-button {
+        margin: 5% 15% 5% 0;    
+
+        button{
+            height: 45px;
+            width: 170px;
+
+            font-size: 25px;
+
+            background-color: #3882F6;
+            color: white;
+
+            border-color: transparent;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 2.5px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #193c74;
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: #1F2937;
+    font-size: 15px;
+    padding: 1%
+}
